@@ -1,0 +1,124 @@
+@import 'animate.css';
+
+/* GENERAL */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Archivo Black', serif;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'comme', sans-serif;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'comme', sans-serif;
+}
+
+p{
+    font-size: 1rem;
+    font-family: 'dosis', sans-serif;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background: url('../assets/img/bg-hero.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-titles{
+    width: 71rem;
+}
+
+picture{
+    z-index: 10;
+}
+
+.profile-img{
+    width: 28rem;
+    z-index: 10;
+}
+
+.hero .subtitle{
+    line-height: 6rem;
+}
+
+.about-description{
+    width: 90rem;
+}
+
+.about-icons{
+    letter-spacing: 1rem;
+}
+
+.skills{
+    width: 100vw;
+}
+
+.card-container{
+    top: 20rem;
+}
+
+.skill-card{
+    width: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter-gray{
+
+}
+
+.tooltip-one {
+    padding:5px 5px;
+    background: #fff;
+    position: absolute;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1;
+    display: none;
+    top: -50px ;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    transition: display 2s;
+  }
+
+  .tooltip-one:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -9px;
+    width: 18px;
+    height: 18px;
+    background: white;
+    transform: rotate(45deg);
+  }
+
+  .skill-card:hover .tooltip-one {
+    display: block;
+  }

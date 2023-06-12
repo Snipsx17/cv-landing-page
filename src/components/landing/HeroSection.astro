@@ -1,0 +1,36 @@
+---
+import { Picture } from "@astrojs/image/components";
+import profilePic from "../../assets/img/profile_pic.jpg";
+import video from "../../assets/video/hero-vid.mp4";
+---
+
+<section
+  class="hero overflow-hidden relative animate__animated animate__fadeInUp"
+>
+  <div class="pt-32 hero-titles z-10">
+    <h1 class="font-titulos text-7xl uppercase text-center text-purple-50">
+      Uberth Hernandez
+    </h1>
+    <h3 class="text-5xl subtitle text-center text-purple-100">
+      Desarrollador Web 💻
+    </h3>
+  </div>
+  <Picture
+    class:list={"profile-img mt-20 rounded-full z-10"}
+    src={profilePic}
+    widths={[200, 400, 800]}
+    sizes="(max-width: 800px) 100vw, 800px"
+    aspectRatio="1:1"
+    alt="profile pic"
+  />
+
+  <video
+    autoplay
+    loop
+    muted
+    class="absolute top-0 left-0 z-0 w-auto min-w-full min-h-full max-w-none"
+  >
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</section>

@@ -1,0 +1,28 @@
+---
+import skills from "../../data/skills.json";
+import { Picture } from "@astrojs/image/components";
+---
+
+<section class="skills container-2xl bg-purple-800 py-40 relative">
+  <h2 class="text-6xl text-center text-white pb-36">Habilidades</h2>
+  <div class="card-container flex justify-evenly gap-8">
+    {
+      skills.map((skill) => (
+        <div class="skill-card">
+            <div class="tooltip-one text-base">
+                {skill.score}
+            </div>
+          <Picture
+            class:list={"mx-auto filter-gray"}
+            src={skill.img}
+            widths={[200, 400, 800]}
+            sizes="(max-width: 100px) 100vw, 100px"
+            aspectRatio="1:1"
+            alt={skill.skill}
+          />
+          <h4 class="text-center text-2xl text-white">{skill.skill}</h4>
+        </div>
+      ))
+    }
+  </div>
+</section>

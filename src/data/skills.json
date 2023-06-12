@@ -1,0 +1,37 @@
+[
+    {
+        "skill" : "HTML",
+        "score" : "9 / 10",
+        "img" : "HTML.png"
+    },
+    {
+        "skill" : "CSS",
+        "score" : "8 / 10",
+        "img" : "CSS.png"
+    },
+    {
+        "skill" : "JavaScript",
+        "score" : "6 / 10",
+        "img" : "JS.png"
+    },
+    {
+        "skill" : "SASS",
+        "score" : "6 / 10",
+        "img" : "SASS.png"
+    },
+    {
+        "skill" : "NODE",
+        "score" : "5 / 10",
+        "img" : "NODE.png"
+    },
+    {
+        "skill" : "ASTRO",
+        "score" : "6 / 10",
+        "img" : "ASTRO.png"
+    },
+    {
+        "skill" : "Tailwind",
+        "score" : "7 / 10",
+        "img" : "TAILWIND.png"
+    }
+]
